@@ -1,0 +1,165 @@
+body {
+    background-image: url('../images/maricota.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left bottom;
+    background-size: 40%;
+    background-color: #e9ea97;
+    font-family: 'Roboto Slab', serif;
+    overflow-y: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.title {
+    display: table;
+    margin: 1em auto;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.subtitle {
+    display: table;
+    margin: 1em auto;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.whell-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.whell-border {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: #ea6d58;
+    height: 680px;
+    overflow: hidden;
+    border-radius: 100%;
+    width: 680px;
+    margin: 2em;
+}
+
+.whell-arrow {
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 100px solid #e589a4;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.skills-wheel {
+    position: relative;
+    background-color: #f9c763;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 100%;
+    width: 600px;
+}
+
+.skills-wheel .btn {
+    background-color: #ea6d58;
+    position: absolute;
+    color: #000;
+    box-shadow: inset 0 -8px 0 #eb5338;
+    height: 150px;
+    left: 50%;
+    line-height: 150px;
+    margin: -65px;
+    padding: 0;
+    border-radius: 100%;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50%;
+    width: 150px;
+}
+
+.skills-wheel .btn:active {
+    box-shadow: none;
+    height: 145px;
+    margin-top: -50px;
+}
+
+
+.wheel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    text-align: center;
+}
+.wheel li {
+    height: 48%;
+    list-style: none;
+    left: 50%;
+    margin: 0 0 0 -100px;
+    padding: 0;
+    position: absolute;
+    transform-origin: center bottom;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    top: 0;
+    width: 32%;
+}
+
+.wheel li:before {
+    display: none;
+}
+
+.whell-img {
+    margin: 1.5em;
+    width: 60%;
+}
+
+.result-image {
+    margin: 2em;
+    width: 300px;
+    height: auto; 
+}
+
+.wheel li:nth-child(1) {
+
+    transform: rotate(0);
+}
+.wheel li:nth-child(2) {
+    transform: rotate(45deg);
+}
+.wheel li:nth-child(3) {
+    transform: rotate(90deg);
+}
+.wheel li:nth-child(4) {
+    transform: rotate(135deg);
+}
+.wheel li:nth-child(5) {
+    transform: rotate(180deg);
+}
+.wheel li:nth-child(6) {
+    transform: rotate(225deg);
+}
+.wheel li:nth-child(7) {
+    transform: rotate(270deg);
+}
+.wheel li:nth-child(8) {
+    transform: rotate(315deg);
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+
